@@ -2,7 +2,7 @@
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
-@prefix sddt:  <https://lemontologist-syed.github.io/6DDT-schema/6DDT_schema_v2.ttl#> .
+@prefix sddt:  <https://skku-bist.github.io/assets/6DDT_schema.ttl> .
 @prefix brick: <https://brickschema.org/schema/Brick#> .
 @prefix vb:    <https://skku-bist.github.io/method#> .
 
