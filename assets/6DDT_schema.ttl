@@ -150,8 +150,8 @@ sddt:hasFaultStatus a owl:DatatypeProperty,
 
 sddt:hasGoverningEquation a owl:DatatypeProperty ;
     rdfs:label "has governing equation" ;
-    rdfs:comment "Governing equations defining the physical model." ;
-    rdfs:domain sddt:PhysicalModel ;
+    rdfs:comment "Governing equation of a virtual model, such as the physical equations of a physical model or the diagnostic condition of a rule model." ;
+    rdfs:domain sddt:VirtualModel ;
     rdfs:range xsd:string .
 
 sddt:hasHyperparameters a owl:DatatypeProperty ;
@@ -440,6 +440,11 @@ sddt:InteractionTool a owl:Class ;
     rdfs:comment "A tool that supports human or agent interaction with the DT environment." ;
     rdfs:subClassOf sddt:Tool .
 
+sddt:PhysicalModel a owl:Class ;
+    rdfs:label "Physical Model" ;
+    rdfs:comment "VirtualModel defined primarily by governing physical equations representing first-principles system behaviour." ;
+    rdfs:subClassOf sddt:VirtualModel .
+
 sddt:SensorData a owl:Class ;
     rdfs:label "Sensor Data" ;
     rdfs:comment "DTData that originates from physical sensing points." ;
@@ -506,11 +511,6 @@ sddt:ModelParameter a owl:Class ;
     rdfs:label "Model Parameter" ;
     rdfs:comment "DTData storing parameter values associated with a specific model or component." ;
     rdfs:subClassOf sddt:DTData .
-
-sddt:PhysicalModel a owl:Class ;
-    rdfs:label "Physical Model" ;
-    rdfs:comment "VirtualModel defined primarily by governing physical equations representing first-principles system behaviour." ;
-    rdfs:subClassOf sddt:VirtualModel .
 
 sddt:RuleModel a owl:Class ;
     rdfs:label "Rule Model" ;
